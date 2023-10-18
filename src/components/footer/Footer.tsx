@@ -1,6 +1,5 @@
 import  {memo} from 'react';
 import './style.sass';
-import {NavLink} from 'react-router-dom';
 import logo from '../../img/logo.svg'
 
 const  FooterImpl = () => {
@@ -10,17 +9,7 @@ const  FooterImpl = () => {
 
       <div className='footer_contacts'>
         <div className='contacts'>
-          <NavLink className='footer_link' to='/'>
-           Главная
-          </NavLink>
-
-          <NavLink className='footer_link' to='./PriceList'>
-             Услуги
-          </NavLink>
-
-          <NavLink className='footer_link' to='/Contacts'>
-            Контакты
-          </NavLink>
+         <strong> ©  Самараская частная скорая </strong> 
         </div>
       </div> 
     </footer>

@@ -1,38 +1,28 @@
 .footer
     display: flex
-    flex-direction: row
-    flex-wrap: wrap
-    align-items: center
-    justify-content: space-evenly
     max-height: 170px
-    background: linear-gradient(40deg, rgba(92,164,20,0.9612219887955182) 16%, rgba(33,156,150,1) 94%)
+    background-color: #1D1D1D
     border-radius: 20px
-    margin: 10px
-    &_link
-        text-decoration: none
-        color: #000
-        font-style: normal
-        font-family: "Lato", sans-serif
-        font-weight: 400
-        font-size: 20px
-        line-height: 30px
-    &_link:hover
-        transition: .3s opacity ease
-        opacity: 0.8
-        color: #fff
+    justify-content: space-around
+    align-items: center
 
 .contacts
-    display: flex
-    flex-direction: row
-    flex-wrap: wrap
-    align-items: center
-    justify-content: space-evenly
-    justify-content: center
-    color: #fff
-    gap: 30px
-    list-style-type: none
-    color: #000
+    color: #99d699
+    font-family: 'Lato',sans-serif
+    font-style: normal
+    font-weight: 400
+    font-size: 30px
+    text-decoration: none
+    cursor: default
 
 .logo
     width: 55px
     height: 55px
+
+@media (max-width: 767px)
+    .contacts
+        font-size: 20px
+
+@media (max-width: 389px)
+    .contacts
+        font-size: 15px

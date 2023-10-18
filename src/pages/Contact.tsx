@@ -1,9 +1,9 @@
 import {memo} from 'react'
 
-const ContactImpl = () => {
+const ContactsImpl = () => {
   return (
     <div>Contact</div>
   )
 }
 
-export const Contact = memo(ContactImpl)
+export const Contacts = memo(ContactsImpl)

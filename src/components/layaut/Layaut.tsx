@@ -11,7 +11,9 @@ const LayautImpl: React.FC<LayoutProps> = ({children}) => {
   return (
     <div className='layaut'>
     <Navbar />
-    <main className='main'>{children}</main>
+    <main className='main'>
+      {children}
+      </main>
     <Footer />
     </div>
 

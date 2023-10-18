@@ -1,29 +1,31 @@
 
 .btn_click
-    background-color: #6765ca
-    font-family: 'Lato'
+    background-color: #6c9d8d
+    font-family: 'Lato',sans-serif
     font-style: normal
     font-weight: 600
-    font-size: 20px
+    font-size: 25px
     line-height: 1.3rem
-    color: #000
-    height: 60px
+    color: #fff
+    height: 80px
     width: 600px
     border-radius: 20px
-    &_click:hover
-        background-color: #09d6ad
+    border: none
+    box-shadow: -2px 17px 8px 0px rgba(108, 157, 141, 0.25)
+    &:hover
+        background-color: #06b390
         transition: 0.5s
         cursor: pointer
 
 .card_visible
     text-align: center
     background-color: #E0F1D9
-    font-family: 'Lato'
+    font-family: 'Lato',sans-serif
     font-style: normal
     font-weight: 500
     font-size: 18px
     line-height: 1.3rem
-    color: #000000
+    color: #000
     max-height: 300px
     width: 600px
     border-radius: 20px
@@ -33,3 +35,14 @@ strong
 
 .text
     margin: 0.5rem
+    font-family: 'Lato', sans-serif
+    font-style: normal
+    font-weight: 300
+
+@media (max-width: 619px)
+    .btn_click
+        font-size: 20px
+        height: 62px
+        width: 330px
+    .card_visible
+        width: 330px

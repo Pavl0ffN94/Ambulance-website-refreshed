@@ -1,31 +1,23 @@
 import {memo} from 'react';
 import './style.sass';
-import {NavLink} from 'react-router-dom';
-import logo from '../../img/logo.svg'
+import {Link} from 'react-router-dom';
+
 
 const  NavbarImpl = () => {
   return (
-    <nav className='nav'>
-        <div className='nav_row'>
-          <NavLink to='/'>
-            <img src={logo} alt='logo-ambulance' className='logo' />
-          </NavLink>
           <div className='nav_list'>
-            <NavLink className='nav_list-item' to='/'>
+            <Link className='nav_list-item' to='/'>
              Главная
-            </NavLink>
+            </Link>
 
-            <NavLink className='nav_list-item' to='./PriceList'>
+            <Link className='nav_list-item' to='/price'>
               Услуги
-            </NavLink>
+            </Link>
 
-            <NavLink className='nav_list-item' to='/Contacts'>
+            <Link className='nav_list-item' to='/contacts'>
               Контакты
-            </NavLink>
+            </Link>
           </div>
-        </div>
-
-    </nav>
   )
 }
 

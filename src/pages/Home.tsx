@@ -1,12 +1,12 @@
 import {memo} from 'react'
 import {Layaut} from '../components/layaut/Layaut';
-import {PriceList} from '../components/priceList/PriceList';
+import {Main} from '../components/main/Main';
 
 
 const  HomeImpl = ()=> {
   return (
-     <Layaut>
-   <PriceList />
+  <Layaut>
+    <Main />
   </Layaut>
   )
 }

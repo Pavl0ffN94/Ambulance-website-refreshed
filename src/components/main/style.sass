@@ -1,0 +1,116 @@
+.container
+    margin: 0 auto
+    padding: 10px
+    position: relative
+    display: flex
+    flex-direction: column
+    flex-wrap: nowrap
+    background-color: #E0F1D9
+    height: 86vh
+    border-radius: 20px
+    align-items: flex-start
+    justify-content: space-around
+    overflow: hidden
+
+.header
+    &_title
+        font-family: 'Open Sans'
+        font-weight: 700
+        z-index: 3
+        font-size: 3rem
+    &_text
+        font-family: 'Lato', sans-serif
+        font-style: normal
+        font-weight: 300
+        font-size: 30px
+        color: #000
+        z-index: 3
+        max-width: 70%
+    &_img
+        position: absolute
+        right: -14%
+        bottom: -8%
+        z-index: 2
+    &_ekg
+        position: absolute
+        fill: #d4eed7
+        width: 90%
+        bottom: -5%
+        left: -14%
+    &_phone
+        display: flex
+        flex-direction: column
+        align-items: center
+        z-index: 3
+        font-weight: 700
+        font-size: 2rem
+        color: #000
+        max-width: 30%
+        padding: 1rem
+
+.btn_phone
+    z-index: 3
+
+@media (max-width: 1400px)
+    .header
+        &_img
+            height: 80%
+            width: fit-content
+            right: -13%
+            bottom: -5%
+        &_ekg
+            width: 70%
+            bottom: 0
+            left: -10%
+
+@media (max-width: 1200px)
+    .header_text
+        font-size: 25px
+        max-width: 60%
+
+@media (max-width: 1099px)
+    .header
+        &_img
+            height: 60%
+            width: fit-content
+            right: -10%
+            bottom: 10%
+        &_ekg
+            width: 90%
+            left: -20%
+            top: 30%
+        &_title
+            font-size: 2rem
+        &_text
+            font-size: 20px
+            font-weight: 600
+        &_phone
+            font-size: 1.5rem
+
+@media (max-width: 949px)
+    .header
+        &_img
+            height: 40%
+            width: fit-content
+            right: -15%
+            bottom: 22%
+
+@media (max-width: 767px)
+    .header
+        &_img
+            display: none
+        &_ekg
+            width: 100%
+            top: 35%
+            left: 0
+        &_phone
+            max-width: 100%
+            font-size: 2rem
+        &_text
+            max-width: 100%
+    .container
+        display: flex
+        flex-direction: column
+        align-content: flex-end
+        flex-wrap: wrap
+        justify-content: space-around
