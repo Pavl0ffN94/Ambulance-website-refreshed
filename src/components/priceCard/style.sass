@@ -1,21 +1,46 @@
-
-.btn_click
+.card_wrapper
+    height: fit-content
+.btn
     background-color: #6c9d8d
     font-family: 'Lato',sans-serif
     font-style: normal
     font-weight: 600
     font-size: 25px
     line-height: 1.3rem
-    color: #fff
-    height: 80px
+    color: #cde38c
+    height: 60px
     width: 600px
-    border-radius: 20px
+    border-radius: 30px
     border: none
-    box-shadow: -2px 17px 8px 0px rgba(108, 157, 141, 0.25)
+    box-shadow: 6px 6px 10px 3px rgba(0, 0, 0, 0.1)
+    position: relative
+    padding-left: 60px
     &:hover
-        background-color: #06b390
-        transition: 0.5s
+        background-color: #304b45
+        transition: 0.8s
         cursor: pointer
+    &::before
+        content: '>'
+        font-size: 2rem
+        color: #000
+        position: absolute
+        left: 20px
+        top: 19px
+        z-index: 2
+        transform: rotate(0deg)
+        transition: transform 0.3s
+    &::after
+        content: " "
+        background-color: #fff
+        position: absolute
+        left: -1px
+        top: 0px
+        width: 60px
+        height: 60px
+        border-radius: 50%
+        box-shadow: 6px 7px 5px 0px rgba(0, 0, 0, 0.11)
+    &.rotated::before
+        transform: rotate(90deg)
 
 .card_visible
     text-align: center
@@ -29,6 +54,8 @@
     max-height: 300px
     width: 600px
     border-radius: 20px
+    padding: 5px
+    box-shadow: -1px 7px 25px 8px rgba(0, 0, 0, 0.1)
 
 strong
     margin-left: 10px
@@ -37,12 +64,16 @@ strong
     margin: 0.5rem
     font-family: 'Lato', sans-serif
     font-style: normal
-    font-weight: 300
+    font-weight: 500
+    font-size: 20px
 
 @media (max-width: 619px)
-    .btn_click
-        font-size: 20px
-        height: 62px
+    .btn
+        font-size: 16px
+        height: 60px
         width: 330px
     .card_visible
         width: 330px
+        height: fit-content
+    .text
+        font-size: 15px

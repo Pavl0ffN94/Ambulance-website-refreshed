@@ -1,4 +1,4 @@
-import  {memo, useState} from 'react'
+import  {memo, useState, useCallback} from 'react'
 import {motion, AnimatePresence} from 'framer-motion';
 import './style.sass'
 import {IPriceCardProps} from 'types';
@@ -9,14 +9,14 @@ const PriceCardImpl: React.FC<IPriceCardProps> = ({headline, cost1, cost2, clari
 
   const [isVisible, setVisible] = useState(false);
 
-  const handleVisibility = () => setVisible(!isVisible);
+  const handleVisibility = useCallback(() => setVisible(!isVisible),[isVisible]);
 
   return (
     <div className='card_wrapper'> 
       <motion.button 
        style={{overflow: 'hidden'}}
        onClick={handleVisibility}
-       className="btn_click">
+       className={`btn ${isVisible ? 'rotated' : ''}`}>
         {headline}
       </motion.button>
       <AnimatePresence>
@@ -25,7 +25,7 @@ const PriceCardImpl: React.FC<IPriceCardProps> = ({headline, cost1, cost2, clari
             initial={{height: 0, opacity: 0}}
             animate={{height: 'auto', opacity: [0, 1] }}
             exit={{height: 0, opacity: [1, 0]}}
-            transition={{duration: 0.3, type:'tween'}}>
+            transition={{duration: 0.4, type:'tween'}}>
             <div className="card_visible">
                <div className='text' > 
                   {clarification1}
