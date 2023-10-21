@@ -12,7 +12,7 @@
     width: 600px
     border-radius: 30px
     border: none
-    box-shadow: 6px 6px 10px 3px rgba(0, 0, 0, 0.1)
+    box-shadow: 6px 6px 10px 3px rgba(0, 0, 0, 0.23)
     position: relative
     padding-left: 60px
     &:hover
@@ -39,8 +39,10 @@
         height: 60px
         border-radius: 50%
         box-shadow: 6px 7px 5px 0px rgba(0, 0, 0, 0.11)
-    &.rotated::before
-        transform: rotate(90deg)
+    &.rotated
+        background-color: #304b45
+        &::before
+            transform: rotate(90deg)
 
 .card_visible
     text-align: center
@@ -52,7 +54,7 @@
     line-height: 1.3rem
     color: #000
     max-height: 300px
-    width: 600px
+    width: 590px
     border-radius: 20px
     padding: 5px
     box-shadow: -1px 7px 25px 8px rgba(0, 0, 0, 0.1)
