@@ -31,4 +31,5 @@ const MainImpl = () => {
   )
 }
 
-export const Main = memo(MainImpl)
+ const Main = memo(MainImpl)
+ export default Main
