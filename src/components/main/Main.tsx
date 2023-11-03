@@ -24,8 +24,8 @@ const MainImpl = () => {
               <strong> +7(846)991-03-03 </strong> 
             Наши номера
           </div>
-        <img className='header_img' src={ambulanceCar} alt='header med' />
-        <img className='header_ekg' src={ekg} alt='ekg' />
+        <img className='header_img' src={ambulanceCar} alt='header med' loading='lazy' />
+        <img className='header_ekg' src={ekg} alt='ekg' loading='lazy' />
       </div>
     </>
   )
